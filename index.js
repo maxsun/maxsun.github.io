@@ -22,7 +22,7 @@ window.onload = function(){
 
   var units = [new unit(100, 100)];
   for(var i = 0; i < 30; i++){
-    units.push(new unit(Math.random()*canvas.width, Math.random()*canvas.height, .07, .07));
+    units.push(new unit(Math.random()*canvas.width, Math.random()*canvas.height, .03, .03));
   }
 
   function getClose(x, y, maxdist){
@@ -66,11 +66,11 @@ window.onload = function(){
       context.stroke();
 
       context.stroke();
-      var close = getClose(units[i].x, units[i].y, 100);
+      var close = getClose(units[i].x, units[i].y, 130);
       for(var j = 0; j < close.length; j++){
         context.beginPath();
-        context.moveTo(units[i].x + radius/2,units[i].y+  radius/2);
-        context.lineTo(close[j].x + radius/2, close[j].y + radius/2);
+        context.moveTo(units[i].x,units[i].y);
+        context.lineTo(close[j].x, close[j].y);
         context.strokeStyle = "rgb(230, 247, 340)";
 
         context.stroke();
