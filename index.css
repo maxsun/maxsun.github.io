@@ -1,0 +1,43 @@
+html, body {
+    overflow: hidden;
+    color: white;
+  font-family: "Helvetica Neue";
+  padding: none;
+}
+
+#canvas{
+  position:absolute;
+  z-index: 0;
+}
+
+#content{
+  padding-left: 50px;
+  padding-top: 20px;
+  position: fixed;
+  width: 300px;
+}
+
+h1{
+  font-size: 64px;
+  text-decoration: underline;
+  font-weight: bold; 
+}
+
+li{
+  font-size: 24px;
+  font-family: "Helvetica Neue";
+  font-weight: bold; 
+  cursor: hand;
+}
+
+a{
+  text-decoration: none;
+}
+a:visited{
+  color: white;
+}
+
+li:hover{
+  color: #B3D8FC;
+  font-size: 25px;
+}
