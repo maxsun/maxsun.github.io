@@ -23,7 +23,7 @@ window.onload = function(){
   }
 
   var units = [new unit(100, 100)];
-  for(var i = 0; i < 15; i++){
+  for(var i = 0; i < 20; i++){
     units.push(new unit(Math.random()*canvas.width, Math.random()*canvas.height, speed, speed));
   }
 
