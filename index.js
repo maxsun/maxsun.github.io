@@ -4,6 +4,8 @@ window.onload = function(){
   var context = canvas.getContext("2d");
   var radius = 5;
   var mousecoords = {x:0, y:0};
+  var fps = 50;
+  var speed = .25;
 
   function getMousePos(canvas, evt) {
     var rect = canvas.getBoundingClientRect();
@@ -21,8 +23,8 @@ window.onload = function(){
   }
 
   var units = [new unit(100, 100)];
-  for(var i = 0; i < 30; i++){
-    units.push(new unit(Math.random()*canvas.width, Math.random()*canvas.height, .03, .03));
+  for(var i = 0; i < 15; i++){
+    units.push(new unit(Math.random()*canvas.width, Math.random()*canvas.height, speed, speed));
   }
 
   function getClose(x, y, maxdist){
@@ -55,9 +57,9 @@ window.onload = function(){
   }
 
   function draw(){
-    context.fillStyle = "rgba(44, 44, 125, .2)"
+    context.fillStyle = "rgba(51, 51, 204, 1)"
     context.fillRect(0, 0, canvas.width, canvas.height);
-    context.fillStyle = "rgb(230, 247, 340)";
+    context.fillStyle = "#8686F7";
     for(var i = 0; i < units.length; i++){
       
       context.beginPath();
@@ -71,17 +73,19 @@ window.onload = function(){
         context.beginPath();
         context.moveTo(units[i].x,units[i].y);
         context.lineTo(close[j].x, close[j].y);
-        context.strokeStyle = "rgb(230, 247, 340)";
+        context.strokeStyle = "#8686F7";
 
         context.stroke();
       }
       
     }
-    
+    setTimeout(function() {
+        requestAnimationFrame(draw);
+    }, 1000 / fps);
   }
   window.addEventListener("resize", function(){
-    canvas.width  = window.innerWidth*.98;
-    canvas.height = window.innerHeight*.969;
+    canvas.width  = window.innerWidth;
+    canvas.height = window.innerHeight;
   });
 
   canvas.addEventListener('mousemove', function(evt) {
@@ -90,8 +94,8 @@ window.onload = function(){
     mousecoords.y = mousePos.y;
   }, false);
 
-  canvas.width  = window.innerWidth*.98;
-  canvas.height = window.innerHeight*.969;
+  canvas.width  = window.innerWidth;
+  canvas.height = window.innerHeight;
     
   function getRndColor() {
       var r = 255*Math.random()|0,
@@ -100,6 +104,6 @@ window.onload = function(){
       return 'rgb(' + r + ',' + g + ',' + b + ')';
   }
 
-  setInterval(draw, 1);
+  draw();
 
 }
