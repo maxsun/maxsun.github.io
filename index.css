@@ -19,7 +19,7 @@ html, body {
   padding-left: 50px;
   padding-top: 20px;
   position: fixed;
-  width: 100%;
+  text-overflow: none;
 }
 
 h1{

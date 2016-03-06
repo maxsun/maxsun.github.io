@@ -2,10 +2,10 @@ window.onload = function(){
 
   var canvas = document.getElementById("canvas");
   var context = canvas.getContext("2d");
-  var radius = canvas.width/70;
+  var radius = canvas.width/60;
   var mousecoords = {x:0, y:0};
   var fps = 50;
-  var speed = .25;
+  var speed = .27;
 
   function getMousePos(canvas, evt) {
     var rect = canvas.getBoundingClientRect();
@@ -22,7 +22,7 @@ window.onload = function(){
     this.yv = Math.random()*yv;
   }
 
-  var units = [new unit(100, 100)];
+  var units = [];
   for(var i = 0; i < 20; i++){
     units.push(new unit(Math.random()*canvas.width, Math.random()*canvas.height, speed, speed));
   }
@@ -74,7 +74,7 @@ window.onload = function(){
         context.moveTo(units[i].x,units[i].y);
         context.lineTo(close[j].x, close[j].y);
         context.strokeStyle = "#8686F7";
-
+        context.lineWidth = 3;
         context.stroke();
       }
       
