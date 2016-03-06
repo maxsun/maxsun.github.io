@@ -2,7 +2,7 @@ window.onload = function(){
 
   var canvas = document.getElementById("canvas");
   var context = canvas.getContext("2d");
-  var radius = 5;
+  var radius = canvas.width/70;
   var mousecoords = {x:0, y:0};
   var fps = 50;
   var speed = .25;

@@ -1,0 +1,16 @@
+body{
+    padding: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: rgb(51, 51, 204);
+    color: #E1E1ED;
+}
+
+h3{
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+li{
+    font-size: 1em;
+    line-height: 1.5em;
+}

@@ -2,7 +2,7 @@ html, body {
   /*overflow: hidden;*/
   margin: 0;
   color: white;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: none;
   background-color: "#2C2C7D";
   height: 100%;
@@ -19,17 +19,17 @@ html, body {
   padding-left: 50px;
   padding-top: 20px;
   position: fixed;
-  width: 300px;
+  width: 100%;
 }
 
 h1{
-  font-size: 64px;
+  font-size: 5em;
   text-decoration: underline;
   font-weight: bold; 
 }
 
 li{
-  font-size: 24px;
+  font-size: 2em;
   font-family: "Helvetica Neue";
   font-weight: bold; 
   cursor: hand;
@@ -45,5 +45,5 @@ a:visited{
 
 li:hover{
   color: #B3D8FC;
-  font-size: 25px;
+  font-size: 1.9em;
 }
