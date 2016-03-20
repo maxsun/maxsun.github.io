@@ -2,10 +2,10 @@ window.onload = function(){
 
   var canvas = document.getElementById("canvas");
   var context = canvas.getContext("2d");
-  var radius = canvas.width/60;
+  var radius = canvas.width/120;
   var mousecoords = {x:0, y:0};
   var fps = 50;
-  var speed = .27;
+  var speed = .08;
 
   function getMousePos(canvas, evt) {
     var rect = canvas.getBoundingClientRect();
@@ -57,9 +57,9 @@ window.onload = function(){
   }
 
   function draw(){
-    context.fillStyle = "rgba(51, 51, 204, 1)"
+    context.fillStyle = "#59AFDE"
     context.fillRect(0, 0, canvas.width, canvas.height);
-    context.fillStyle = "#8686F7";
+    context.fillStyle = "#A2D0E8";
     for(var i = 0; i < units.length; i++){
       
       context.beginPath();
@@ -68,13 +68,13 @@ window.onload = function(){
       context.stroke();
 
       context.stroke();
-      var close = getClose(units[i].x, units[i].y, 130);
+      var close = getClose(units[i].x, units[i].y, 100);
       for(var j = 0; j < close.length; j++){
         context.beginPath();
         context.moveTo(units[i].x,units[i].y);
         context.lineTo(close[j].x, close[j].y);
-        context.strokeStyle = "#8686F7";
-        context.lineWidth = 3;
+        context.strokeStyle = "#A2D0E8";
+        context.lineWidth = .5;
         context.stroke();
       }
       
