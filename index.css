@@ -16,19 +16,22 @@ html, body {
 }
 
 #content{
-  padding-left: 50px;
-  padding-top: 20px;
-  
-  position: fixed;
-  text-overflow: none;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+}
+
+#wrapper{
+  text-align: center;
 }
 
 h1{
   font-size: 5em;
-  font-weight: bolder; 
+  margin-bottom: 0px;
+
 }
 
-li{
+a{
   font-size: 2em;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
@@ -44,7 +47,7 @@ a:visited{
   color: white;
 }
 
-li:hover{
+a:hover{
   color: #B3D8FC;
   font-size: 2.1em;
 }
