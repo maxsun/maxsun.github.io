@@ -5,7 +5,10 @@ window.onload = function(){
   var radius = canvas.width/120;
   var mousecoords = {x:0, y:0};
   var fps = 50;
-  var speed = .08;
+  var speed = .02;
+
+  canvas.width  = window.innerWidth;
+  canvas.height = window.innerHeight;
 
   function getMousePos(canvas, evt) {
     var rect = canvas.getBoundingClientRect();
@@ -23,8 +26,16 @@ window.onload = function(){
   }
 
   var units = [];
-  for(var i = 0; i < 20; i++){
-    units.push(new unit(Math.random()*canvas.width, Math.random()*canvas.height, speed, speed));
+  for(var i = 0; i < 50; i++){
+    var yspeed = 1;
+    if(Math.random() > 0.5){
+        yspeed = -1;
+    }
+    var xspeed = 1;
+    if(Math.random() > 0.5){
+        xspeed = -1;
+    }
+    units.push(new unit(Math.random()*canvas.width, Math.random()*canvas.height, speed * xspeed, speed * yspeed));
   }
 
   function getClose(x, y, maxdist){
@@ -94,8 +105,7 @@ window.onload = function(){
     mousecoords.y = mousePos.y;
   }, false);
 
-  canvas.width  = window.innerWidth;
-  canvas.height = window.innerHeight;
+  
     
   function getRndColor() {
       var r = 255*Math.random()|0,
