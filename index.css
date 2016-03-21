@@ -31,7 +31,7 @@ h1{
 
 li{
   font-size: 2em;
-  font-family: "Helvetica Neue";
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   cursor: hand;
 }
