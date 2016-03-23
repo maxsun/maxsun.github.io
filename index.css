@@ -48,6 +48,8 @@ a:visited{
 }
 
 a:hover{
-  color: #B3D8FC;
+  color: #8BCDFC;
   font-size: 2.1em;
+    text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+
 }
