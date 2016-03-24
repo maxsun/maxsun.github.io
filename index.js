@@ -9,7 +9,8 @@ window.onload = function(){
   var radius = canvas.width/280;
   var mousecoords = {x:0, y:0};
   var fps = 50;
-  var speed = .02;
+  var speed = 1;
+  var maxdist = 100;
 
   function getMousePos(canvas, evt) {
     var rect = canvas.getBoundingClientRect();
@@ -27,7 +28,7 @@ window.onload = function(){
   }
 
   var units = [];
-  for(var i = 0; i < 50; i++){
+  for(var i = 0; i < 70; i++){
     var yspeed = 1;
     if(Math.random() > 0.5){
         yspeed = -1;
@@ -39,43 +40,13 @@ window.onload = function(){
     units.push(new unit(Math.random()*canvas.width, Math.random()*canvas.height, speed * xspeed, speed * yspeed));
   }
 
-  function getClose(x, y, maxdist){
-    var results = [];
-    for(var i =0; i < units.length; i++){
-      var dist = Math.sqrt(Math.pow(units[i].x - x,2)+Math.pow(units[i].y-y,2));
-      if(dist < maxdist){
-        results.push(units[i]);
-      }
-      units[i].x += units[i].xv;
-      units[i].y += units[i].yv;
-      if(units[i].x >= canvas.width){
-        units[i].xv *= -1;
-      }
-      if(units[i].x < 0){
-        units[i].xv *= -1;
-      }
-      if(units[i].y >= canvas.height){
-        units[i].yv *= -1;
-      }
-      if(units[i].y < 0){
-        units[i].yv *= -1;
-      }
-    }
-    var mouseDist = Math.sqrt(Math.pow(mousecoords.x - x,2)+Math.pow(mousecoords.y-y,2));
-    if(mouseDist < maxdist){
-      results.push({x:mousecoords.x, y:mousecoords.y});
-    }
-    return results;
-  }
-
   function draw(){
-    context.fillStyle = "#8BCDFC"
+    context.fillStyle = "rgba(139, 205, 252, 1)"
     context.fillRect(0, 0, canvas.width, canvas.height);
     context.fillStyle = "rgb(104, 134, 217)";
 
 
     for(var i = 0; i < units.length; i++){
-      var maxdist = 100;
       var x = units[i].x;
       var y = units[i].y;
 
@@ -91,24 +62,27 @@ window.onload = function(){
            context.stroke();
         }
 
-        units[i].x += units[i].xv;
-        units[i].y += units[i].yv;
-        if(units[i].x >= canvas.width){
-          units[i].xv *= -1;
-        }
-        if(units[i].x < 0){
-          units[i].xv *= -1;
-        }
-        if(units[i].y >= canvas.height){
-          units[i].yv *= -1;
-        }
-        if(units[i].y < 0){
-          units[i].yv *= -1;
-        }
+        
       }
   }
 
   for(var i = 0; i < units.length; i++){
+    var distFromMouse = Math.sqrt(Math.pow(units[i].x - mousecoords.x,2)+Math.pow(units[i].y-mousecoords.y,2));
+    units[i].x += units[i].xv;
+    units[i].y += units[i].yv;
+    if(units[i].x >= canvas.width){
+      units[i].xv *= -1;
+    }
+    if(units[i].x < 0){
+      units[i].xv *= -1;
+    }
+    if(units[i].y >= canvas.height){
+      units[i].yv *= -1;
+    }
+    if(units[i].y < 0){
+      units[i].yv *= -1;
+    }
+
     context.beginPath();
     context.arc(units[i].x, units[i].y, radius, 0, 2 * Math.PI, false);
     context.fill();
