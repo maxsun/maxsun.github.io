@@ -1,35 +1,30 @@
-html, body {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
-  background-color: #FAFAFA;
+body{
+    padding: 30px;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    font-weight: 320;
+    letter-spacing: 0.7px;
+    font-size: 15px;
+    line-height: 17px;
+    color: #333;
 }
 
-p{
-  color: #555;
+.listbox{
+    padding: 10px;
+    line-height: 21px;
+    list-style-type: circle;
 }
 
-#display{
-  margin: auto;
-  margin-top: 10%;
-  width: 300px;
-  text-align: center;
-  border-radius: 10px;
-  padding: 10px;
+hr{
+    height: 1px;
+    border: none;
+    background-color: #777;
 }
 
 a{
-  text-decoration: none;
-  color: #E85A5A;
-  font-size: 20px;
+    color: #3772C4;
+    padding: 1px;
 }
-
 a:hover{
-  text-decoration: underline;
-}
-
-h1{
-  font-size: 36px;
-  padding: 5px;
-  margin: 0;
-  line-height: 36px;
-  font-weight: 500;
+    background-color: #3772C4;
+    color: white;
 }
