@@ -48,6 +48,7 @@ h1 {
     font-size: 34px;
     margin: 0;
     text-decoration: underline #3772C4;
+    text-decoration-color: #3772C4;
 }
 
 h2 {
@@ -91,20 +92,20 @@ ol {
   }
 
 a {
+   text-decoration:none;
+}
+
+a.external {
     color: #3772C4;
     padding: 1px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-size: 16px;
     font-weight: bold;
 }
-a:hover {
+a.external:hover {
     text-decoration: underline;
     color: white;
     background-color: #3772C4;
-}
-
-a.hiddenLink:hover {
-    background-color: rgba(255, 255, 255, 1);
 }
 
 hr {
