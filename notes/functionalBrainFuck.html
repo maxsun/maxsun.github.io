@@ -39,14 +39,17 @@
         </div>
     </body>
     
-    <script>
-            var links = document.links;
-            for (var i = 0; i < links.length; i++) {
-                if (links[i].href.indexOf("https://") != -1) {
-                    if (links[i].className.indexOf("hiddenLink") == -1) {
-                        links[i].className += " external";
-                        links[i].target = "_blank";
-                    }
-                }
+<script>
+    var links = document.links;
+    for (var i = 0; i < links.length; i++) {
+        if (links[i].href.indexOf("https://") != -1) {
+            if (links[i].className.indexOf("hiddenLink") == -1) {
+                links[i].className += " external";
+                links[i].target = "_blank";
             }
-        </script>
+        }
+        if (links[i].className.indexOf("hiddenLink") == -1 && links[i].className.indexOf("external") == -1) {
+            links[i].className += " external";
+        }
+    }
+</script>
