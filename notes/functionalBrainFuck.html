@@ -1,0 +1,47 @@
+<head>
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+        <title>Mildly Surprised</title>
+    </head>
+    
+    <body>
+        <div id="window">
+            <div id="windowHeader">
+                <a class="hiddenLink" href="../index.html"><h1>Mildly Surprised</h1></a>
+                <i class="lightText">Notes and such</i>
+            </div>
+            <hr>
+            <div id="windowBody">
+                <h2>Functional Brainf-ck</h2>
+                <p>
+                    <a href="https://en.wikipedia.org/wiki/Brainfuck">Brainfuck</a> is an esoteric programming language comprised of only 8 symbols. Despite the simplicity of the langauge syntax, Bf is actually a <a href="https://en.wikipedia.org/wiki/Turing_completeness">Turing complete</a> programming language. The cool consequence of this, is that Bf is capable of computing all the same algorithms your favorite language can compute. Essentially, Brainfuck simulates a <a href="https://en.wikipedia.org/wiki/Turing_machine">Turing machine</a> with these commands:
+                    <ol>
+                        <li><span class="mono">></span> Move pointer right.</li>
+                        <li><span class="mono"><</span> Move pointer left.</li>
+                        <li><span class="mono">+</span> Increase the byte at the pointer.</li>
+                        <li><span class="mono">-</span> Decrease the byte at the pointer.</li>
+                        <li><span class="mono">.</span> Output the byte at the pointer.</li>
+                        <li><span class="mono">,</span> Wait for one byte of input, stored at the pointer. </li>
+                        <li><span class="mono">[</span> If the current byte is 0, skip to matching "]".</li>
+                        <li><span class="mono">]</span> If the current byte is not 0, move back to the matching "["</li>
+
+                    </ol>
+                </p>
+                <br>
+                <p>
+                    <a href="https://en.wikipedia.org/wiki/Lambda_calculus">Lambda Calculus</a> is a formal system designed by Alonzo Church that also allows for computation of all algorithms also computable by a Turing machine. Similar to Bf, Lambda Calculus is extremely simple- consisting of only 3 syntactic rules. 
+                </p>
+            </div>
+            <hr>
+            <div id="windowFooter">
+                <p>Contact me: <a href="mailto:sunm@berkeley.edu">sunm@berkeley.edu</a></p>
+            </div>
+        </div>
+    </body>
+    
+    <script>
+        var links = document.links;
+        for (var i = 0; i < links.length; i++) {
+            links[i].target = "_blank";
+        }
+    </script>
