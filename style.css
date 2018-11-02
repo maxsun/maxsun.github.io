@@ -109,6 +109,14 @@ hr {
     background-color: rgb(230, 230, 230);
 }
 
+code {
+    border: solid 1px rgb(230, 230, 230);
+}
+
+canvas {
+    margin-left: auto;
+}
+
 #titleText {
     color: #3772C4;
     text-decoration: underline #3772C4;

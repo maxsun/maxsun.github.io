@@ -1,7 +1,12 @@
 <head>
         <link rel="stylesheet" type="text/css" href="../style.css">
+        <link rel="stylesheet" type="text/css" href="../note-styles/functionalbrainfuck.css">
+
         <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
         <title>Mildly Surprised</title>
+      <link rel="stylesheet" href="../highlight/styles/github.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+        <script src="../code/functionalbrainfuck.js"></script>
     </head>
     
     <body>
@@ -14,23 +19,28 @@
             <div id="windowBody">
                 <h2>Functional Brainf-ck</h2>
                 <p>
-                    <a href="https://en.wikipedia.org/wiki/Brainfuck">Brainfuck</a> is an esoteric programming language comprised of only 8 symbols. Despite the simplicity of the langauge syntax, Bf is actually a <a href="https://en.wikipedia.org/wiki/Turing_completeness">Turing complete</a> programming language. The cool consequence of this, is that Bf is capable of computing all the same algorithms your favorite language can compute. Essentially, Brainfuck simulates a <a href="https://en.wikipedia.org/wiki/Turing_machine">Turing machine</a> with these commands:
-                    <ol>
-                        <li><span class="mono">></span> Move pointer right.</li>
-                        <li><span class="mono"><</span> Move pointer left.</li>
-                        <li><span class="mono">+</span> Increase the byte at the pointer.</li>
-                        <li><span class="mono">-</span> Decrease the byte at the pointer.</li>
-                        <li><span class="mono">.</span> Output the byte at the pointer.</li>
-                        <li><span class="mono">,</span> Wait for one byte of input, stored at the pointer. </li>
-                        <li><span class="mono">[</span> If the current byte is 0, skip to matching "]".</li>
-                        <li><span class="mono">]</span> If the current byte is not 0, move back to the matching "["</li>
-
-                    </ol>
+                    <a href="https://en.wikipedia.org/wiki/Brainfuck">Brainfuck</a> is a programming language comprised of only 8 symbols. Despite the simplicity of the langauge syntax, Brainfuck is actually a <a href="https://en.wikipedia.org/wiki/Turing_completeness">Turing complete</a> programming language. The cool consequence of this, is that Brainfuck is capable of computing all the same algorithms your favorite language can compute. Essentially, Brainfuck simulates a <a href="https://en.wikipedia.org/wiki/Turing_machine">Turing machine</a> with these 8 commands:
                 </p>
-                <br>
+                <ol>
+                    <li><span class="mono">></span> Move pointer right.</li>
+                    <li><span class="mono"><</span> Move pointer left.</li>
+                    <li><span class="mono">+</span> Increase the byte at the pointer.</li>
+                    <li><span class="mono">-</span> Decrease the byte at the pointer.</li>
+                    <li><span class="mono">.</span> Output the byte at the pointer.</li>
+                    <li><span class="mono">,</span> Wait for one byte of input, stored at the pointer. </li>
+                    <li><span class="mono">[</span> If the current byte is 0, skip to matching "]".</li>
+                    <li><span class="mono">]</span> If the current byte is not 0, move back to the matching "["</li>
+                </ol>
                 <p>
-                    <a href="https://en.wikipedia.org/wiki/Lambda_calculus">Lambda Calculus</a> is a formal system designed by Alonzo Church that also allows for computation of all algorithms also computable by a Turing machine. Similar to Bf, Lambda Calculus is extremely simple- consisting of only 3 syntactic rules. 
+                    If you're familiar with the variety of features packed into most popular programming languages, you might be wondering: "where are my variables?" or "what about functions?". It turns out, this is all you need to be able to solve the same problems you can solve with a fancy language like Python, it just might be a lot more confusing in Brainfuck. For example, this is the code to print "Hello World":
                 </p>
+                <pre><code class="javascript">+[-[<<[+[--->]-[<<<]]]>>>-]>-.---.>..>.<<<<-.<+.>>>>>.>.<<.<-.</code></pre>
+                <p>
+                    What exactly is happening here? Brainfuck's lack of variables, function, or almost any abstraction makes it really difficult to read. Instead, let's visualize it:
+                </p>
+                <div class="bfviz">
+                    
+                </div>
             </div>
             <hr>
             <div id="windowFooter">
@@ -38,7 +48,8 @@
             </div>
         </div>
     </body>
-    
+
+<script>hljs.initHighlightingOnLoad();</script>
 <script>
     var links = document.links;
     for (var i = 0; i < links.length; i++) {

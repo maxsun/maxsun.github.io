@@ -1,0 +1,44 @@
+
+.box {
+  border: solid 1px rgb(230, 230, 230);
+  margin: 3px;
+  text-align: center;
+  flex: 1;
+}
+
+.controls {
+  width: 100%;
+  margin: 3px;
+  display: flex;
+}
+
+.playButton {
+  border: solid 1px #3772C4;
+  font-size: 16px;
+}
+
+.playButton:hover {
+  cursor: pointer;
+  background-color: #3772C4;
+  color: white;
+}
+
+.highlighted {
+  border-color: #3772C4;
+}
+
+.bfviz {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 18px;
+}
+
+.bfText {
+  background-color: #333;
+  padding: 1px;
+  color: white;
+  font-size: 16px;
+  flex: 1;
+  margin-left: 10px;
+  padding: 3px;
+}
