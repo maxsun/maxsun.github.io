@@ -47,8 +47,6 @@ h1 {
     color: #333;
     font-size: 34px;
     margin: 0;
-    text-decoration: underline #3772C4;
-    text-decoration-color: #3772C4;
 }
 
 h2 {
@@ -97,19 +95,26 @@ a {
 
 a.external {
     color: #3772C4;
-    padding: 1px;
-    /* text-decoration: underline; */
     font-size: 16px;
     font-weight: bold;
+    border-radius: 2px;
 }
 a.external:hover {
     text-decoration: underline;
-    color: white;
-    background-color: #3772C4;
 }
 
 hr {
     border: none;
     height: 1px;
     background-color: rgb(230, 230, 230);
+}
+
+#titleText {
+    color: #3772C4;
+    text-decoration: underline #3772C4;
+    text-decoration: underline;
+}
+
+#titleTextColor {
+    color: #333;
 }
