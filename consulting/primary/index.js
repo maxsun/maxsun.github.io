@@ -108,8 +108,7 @@ function scanData() {
             } else {
                 let formattedData = formatData(results);
                 makeTable(formattedData);
-                document.getElementById('loadingIcon').style.display = 'none';
-                // console.log(formattedData)
+                document.getElementById('loadingDiv').style.display = 'none';
                 let csvString = Papa.unparse(formattedData);
                 document.getElementById('downloadCSV').onclick = function() {
                     var blob = new Blob([csvString]);
