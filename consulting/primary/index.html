@@ -3,57 +3,28 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="http://w2ui.com/src/w2ui-1.5.rc1.min.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+
     <script src="https://sdk.amazonaws.com/js/aws-sdk-2.7.16.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://w2ui.com/src/w2ui-1.5.rc1.min.js"></script>
     <script src="https://unpkg.com/papaparse@4.6.3/papaparse.min.js"></script>
-    <style>
-        table {
-            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-            border-collapse: collapse;
-            font-size: 12px;
-            width: 100%;
-            table-layout: fixed;
-        }
-
-        table td,
-        table th {
-            border: 1px solid #ddd;
-            padding: 8px;
-            overflow: hidden;
-        }
-
-        table tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-
-        table th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: left;
-            background-color: #4CAF50;
-            color: white;
-        }
-    </style>
 </head>
 
 <body>
-    <button id="downloadCSV">Download</button>
-    <table id="example" class="table table-striped table-bordered nowrap" cellspacing="0" width="100%">
-        <thead>
-            <tr>
-                <th>Company Name</th>
-                <th>Locations</th>
-                <th>Text</th>
-                <th>Amounts</th>
-                <th>Mentioned Companies</th>
-                <th>Series</th>
-                <th>Date</th>
-                <th>URL</th>
-                <th>Event</th>
-            </tr>
-        </thead>
-    </table>
-    <div id="loadingDiv">Loading...</div>
+    <div id="flexWrapper">
+            <div id="statsDisplay">
+                    <h3>VC News Aggregation</h3>
+                    <button id="downloadCSV">Download</button>
+            </div>
+            <div id="tableDisplay">
+                <div id="grid"></div>
+                <div id="loadingIconWrapper">
+                    <div id='loadingIcon' class="loader">Loading...</div>
+                </div>
+            </div>
+    </div>
 </body>
 
 </html>
