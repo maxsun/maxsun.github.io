@@ -10,7 +10,7 @@ The argument is fairly straight forward:
 1. If a system is context-sensitive, then it must rely on an intermediate interpretation step which determines the meaning of input-data relative to a context.
 2. Interpretation is a computational process.
 3. Computational processes can be measured in terms of required resources; typically Time and Space.
-4. By (2) and (3), the computational nature of Interpretation causes it to rely on Resources (ie: Time/Space).
+4. By (2) and (3), the computational nature of Interpretation causes it to rely on Resources (ie: Time or Space).
 5. By (1) and (4), any Context-Sensitive system requires Interpretation, which requires Resources. Therefore, any Context-Sensitive must also be Resource-Sensitive.
 
 In other words, if linguistic meaning is dependent on contextual information, then it must also be dependent on the resources allocated towards its interpretation.
