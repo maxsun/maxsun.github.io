@@ -19,4 +19,7 @@ They ask for an interpretation relative to a context, but never specify what res
    
 Surely there must be consequences for this… right?
 
-\( M = P(x, C, s, t) \)
+$ M = P(x, C, s, t) $
+More math:
+
+$$ x = \frac{x^2}{x_3} $$
