@@ -1,6 +1,8 @@
 theme: jekyll-theme-minimal
+layout: post
 mathjax: true
 markdown: kramdown
 title: Mildly Surprised
+profile: false
 description: Notes about Cognitive Science, Programming, and Language
 show_downloads: true
