@@ -1,12 +1,11 @@
 # Meaning is Resource-Sensitive
 
 A basic goal of Linguistics and Cognitive Science is to determine a non-ambiguous method for representing the meaning of a linguistic expression.
-Since Frege's notions of Sense and Reference in 1892, a common theme underlying formal models of semantics is the notion of Context-Sensitivitiy.
+Since Frege's notions of [Sense and Reference]( https://www-jstor-org.libproxy.berkeley.edu/stable/2181485 ) in 1892, a common theme underlying formal models of semantics is the notion of Context-Sensitivitiy.
 This is the idea that the meaning of an expression is determined by an Interpreter according to existing contextual information -- without a context to be interpreted within, information and meaning cannot exist.
-For example, the word "Cat" has meaning by association with past memories of Cats and other occurences of the word in the language.
-I believe that the Context-Sensitive nature of such models suggests that the models must also be sensitive to the availability of computational resources such as Time and Space.
+I believe that the Context-Sensitive nature of such models entails that the models also be sensitive to the availability of computational resources such as Time and Space.
  
-The argument is fairly straight forward:
+The argument is straight forward:
 1. If a system is context-sensitive, then it must rely on an intermediate interpretation step which determines the meaning of input-data relative to a context.
 2. Interpretation is a computational process.
 3. Computational processes can be measured in terms of required resources; typically Time and Space.
