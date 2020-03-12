@@ -20,5 +20,5 @@ They ask for an interpretation relative to a context, but never specify what res
 Surely there must be consequences for this… right?
 
 $$
-[x]_C = P(x, C, s, t)
+x_C = P(x, C, s, t)
 $$
