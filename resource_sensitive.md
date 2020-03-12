@@ -20,3 +20,7 @@ They ask for an interpretation relative to a context, but never specify what res
 Surely there must be consequences for this… right?
 
 $ M = P(x, C, s, t) $
+
+More math:
+
+$$ x = \frac{1}{x^3 - f(4)} $$
