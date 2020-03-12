@@ -18,3 +18,5 @@ However, most models seem to ignore the resource-sensitivity of information and 
 They ask for an interpretation relative to a context, but never specify what resources are available for interpretation.
    
 Surely there must be consequences for this… right?
+
+$ M = P(x, C, s, t) $
