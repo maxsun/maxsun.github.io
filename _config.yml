@@ -1,8 +1,12 @@
-# theme: jekyll-theme-minimal
 layout: post
 mathjax: true
-markdown: kramdown
-title: Mildly Surprised
+title: Snake Eating Itself
 profile: false
 description: Notes about Cognitive Science, Programming, and Language
 show_downloads: true
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge

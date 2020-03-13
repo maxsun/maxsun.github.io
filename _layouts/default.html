@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>Snake Eating Itself</title>
+  <title>S.E.I.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
@@ -14,11 +14,27 @@
       <style>
         body {
           font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-          background-color: white;
+          background-color: #fbfef9;
         }
 
         a {
-          color: #3e92cc;
+          color: #0e79b2;
+          text-decoration: none;
+          outline: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        code {
+            font-size: 16px;
+            /* border: solid 1px; */
+        }
+
+        pre.highlight {
+            border: solid 1px;
+            padding: 10px;
+            border-radius: 5px;
         }
 
         #header {
@@ -30,6 +46,9 @@
 
         #header a {
           color:  white;
+          text-decoration: underline;
+          font-weight: 700;
+          font-style: italic;
         }
 
         #content {
@@ -42,7 +61,7 @@
         }
 
         #content li {
-          margin-bottom: 3px;
+          /* margin-bottom: 3px; */
           font-size: 18px;
         }
 
@@ -72,8 +91,10 @@
 
         p {
           font-size: 18px;
+          line-height: 1.25;
         }
       </style>
+      <link href='/assets/css/monokai.css' rel='stylesheet'>
     </head>
 <body>
   <div id="header">
