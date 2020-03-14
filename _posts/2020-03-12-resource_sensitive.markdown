@@ -1,31 +1,33 @@
 ---
 layout: post
-title: "If meaning requires computation, then it is resource-sensitive."
+title: "If something is the product of computation, then it is resource-sensitive."
 ---
 
-# Meaning is Resource-Sensitive
+# Resource Sensitivity
 
-A basic goal of Linguistics and Cognitive Science is to determine a non-ambiguous method for representing the meaning of a linguistic expression.
-Since Frege's notions of [Sense and Reference]( https://www-jstor-org.libproxy.berkeley.edu/stable/2181485 ) in 1892, a common theme underlying formal models of semantics is the notion of Context-Sensitivitiy.
-This is the idea that the meaning of an expression is determined by an Interpreter according to existing contextual information -- without a context to be interpreted within, information and meaning cannot exist.
-I believe that the Context-Sensitive nature of such models entails that the models also be sensitive to the availability of computational resources such as Time and Space.
- 
-The argument is straight forward:
-1. If a system is context-sensitive, then it must rely on an intermediate interpretation step which determines the meaning of input-data relative to a context.
-2. Interpretation is a computational process.
-3. Computational processes can be measured in terms of required resources; typically Time and Space.
-4. By (2) and (3), the computational nature of Interpretation causes it to rely on Resources (ie: Time or Space).
-5. By (1) and (4), any Context-Sensitive system requires Interpretation, which requires Resources. Therefore, any Context-Sensitive must also be Resource-Sensitive.
+By definition, algorithms are composed of sequences of instructions.
 
-In other words, if linguistic meaning is dependent on contextual information, then it must also be dependent on the resources allocated towards its interpretation.
+Even in the purely metaphysical sense, algorithms have a corresponding *complexity*, which refers to the quantity of computational *resources*, such as time and space, required for running it. [^1]
 
-Even among basic sentences, resource-sensitivity has a clear effect on meaning.
-A quick (low-resource) interpretation of the sentence, "Snow is white" may produce the proposition, $\text{White}(\text{snow})$.
-However, further interpretation (using more resources) may reveal that frozen rain is white or that snow is the same color as the White House.
-The meaning of a sentence is dramatically dependent on the resources devoted to interpreting it.
+Because of this, any algorithmic process must be sensitive to the resources available for its computation. For this reason, algorithmic processes are *resource-sensitive*.
 
-Because meaning and information are resource-sensitive, it doesn’t make sense to refer to the meaning of something without indicating the resources and context available for interpretation.
-However, most models seem to ignore the resource-sensitivity of information and meaning!
-They ask for an interpretation relative to a context, but never specify what resources are available for interpretation.
+Any complete representational model of algorithmic processes must account for resource-sensitivity.
 
-Surely there must be consequences for this… right?
+This is pretty unsurprising, in most representations of algorithmic processes, we account for things like time and space. When we consider how a flower blooms, we don't consider it at a single moment in time, we consider its growth. Turing machines -- devices capable of computing algorithm any algorithm a human can -- operate over memory tapes (space) and states (time).
+
+## In Language & Semantics
+
+Any adequate model of language and semantics should provide tools for describing the words, their meanings, and relationships between them. Formally, let $\text{cat}$ represent the string of symbols "cat". Let $[\text{cat}]_C$ denote the meaning of the word "cat" in context C.
+
+A common principle of formal models of language is *context-sensitivity*: the notion that an expression's meaning is determined relative to existing contextual information. The word "that" for example, has no real meaning without context. Formally, we might represent the context-sensitive meaning of a word:
+$$
+[\text{bridge}]_{\text{boat}} \neq [\text{bridge}]_{\text{retirement home}}
+$$
+
+However, I believe that the context-sensitive nature of such models entails that the models also be sensitive to the availability of computational resources such as Time and Space. Consequently, any context-sensitive interpretation of a linguistic expression is subject to the resources spent on its interpretation.  Formally, let $[x]^{R}_{C}$ represent the meaning of the word $x$ relative to context $C$ after exhausting $R$ computational resources. The word "justice", for example, often becomes more meaningful and complex upon further consideration:
+$$
+[\text{justice}]^x_C > [\text{justice}]^y_C \iff x > y
+$$
+
+
+[^1]: *Time complexity* refers to the amount of time required to run an algorithm. Typically, "time" refers to the number of basic operations needed. *Space complexity* refers to the amount of memory space required to run an algorithm. "Space" is usually measured in terms of the number of bits needed.
