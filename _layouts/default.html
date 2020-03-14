@@ -14,8 +14,11 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
       <style>
         body {
-          font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+          /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; */
           background-color: white;
+          font-family: Helvetica, Arial, sans-serif;
+          margin: 10px;
+          padding: 0;
         }
 
         a {
@@ -39,30 +42,34 @@
         }
 
         #header {
-          background-color: #020402;
+          background-color: #101010;
           padding: 5px;
-          font-size: 18px;
+          font-size: 20px;
+          margin-top: 20px;
           margin-bottom: 15px;
+          max-width: 800px;
+          margin-left: auto;
+          margin-right: auto;
         }
 
         #header a {
           color:  white;
           text-decoration: underline;
           font-weight: 700;
-          font-style: italic;
+          /* font-style: italic; */
         }
 
         #content {
           max-width: 800px;
           width: 85%;
           margin: auto;
-          color: #020402;
+          color: #1c1c1c;
           padding-left: 30px;
           padding-right: 30px;
           padding-bottom: 20px;
         }
 
-        #content li {
+         li {
           /* margin-bottom: 3px; */
           font-size: 18px;
         }
@@ -78,7 +85,7 @@
         h2 {
           font-size: 20px;
           /* font-family: 'Times New Roman', Times, serif; */
-          color: #020402;
+          color: #101010;
           margin-top: 10px;
           margin-bottom: 10px;
         }
@@ -86,20 +93,34 @@
         h3 {
           font-size: 18px;
           /* font-family: 'Times New Roman', Times, serif; */
-          color: #020402;
+          color: #101010;
           margin-top: 10px;
           margin-bottom: 10px;
         }
 
         p {
           font-size: 18px;
-          line-height: 1.25;
+          line-height: 1.44em;
+          font-weight: 100;
+          margin-bottom: 10px;
+          /* margin-bottom: calc(1.44em / 2); */
         }
 
         .footnotes {
-          border-top: solid 1px #020402;
+          border-top: solid 1px #101010;
           margin-top: 40px;
+          /* font-size: 14px; */
+          color: #333333;
         }
+        .footnotes p {
+          font-size: 15px;
+        }
+        #logo {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+        }
+
       </style>
       <link href='/assets/css/monokai.css' rel='stylesheet'>
     </head>
