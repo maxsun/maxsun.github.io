@@ -20,11 +20,13 @@ This is pretty unsurprising, in most representations of algorithmic processes, w
 Any adequate model of language and semantics should provide tools for describing the words, their meanings, and relationships between them. Formally, let $\text{cat}$ represent the string of symbols "cat". Let $[\text{cat}]_C$ denote the meaning of the word "cat" in context C.
 
 A common principle of formal models of language is *context-sensitivity*: the notion that an expression's meaning is determined relative to existing contextual information. The word "that" for example, has no real meaning without context. Formally, we might represent the context-sensitive meaning of a word:
+
 $$
 [\text{bridge}]_{\text{boat}} \neq [\text{bridge}]_{\text{retirement home}}
 $$
 
 However, I believe that the context-sensitive nature of such models entails that the models also be sensitive to the availability of computational resources such as Time and Space. Consequently, any context-sensitive interpretation of a linguistic expression is subject to the resources spent on its interpretation.  Formally, let $[x]^{R}_{C}$ represent the meaning of the word $x$ relative to context $C$ after exhausting $R$ computational resources. The word "justice", for example, often becomes more meaningful and complex upon further consideration:
+
 $$
 [\text{justice}]^x_C > [\text{justice}]^y_C \iff x > y
 $$
