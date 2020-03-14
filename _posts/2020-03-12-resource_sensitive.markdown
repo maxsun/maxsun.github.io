@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Meaning is Resource-Sensitive"
+title: "If meaning requires computation, then it is resource-sensitive."
 ---
 
 # Meaning is Resource-Sensitive
