@@ -111,6 +111,18 @@ At each focal point (represented by the stars in the image above), Orientation C
 
 ## Line Detectors vs Spatial Frequency
 
-When Hubel & Wiesel discovered orientation-selectivity, they suggested that the shapes we perceive are produced by combining line-segments detected by Hypercolumns. However, line-segments cause very binary and exact representations of information -- something is either "on" or "off". In reality, our receptive fields have overlapping elements and it's more likely that they process information in a more dynamic way. Modern theories (following DeValois) endorse the idea that **Spatial Frequency** plays a vital role in the representation of visual information. 
+When Hubel & Wiesel discovered orientation-selectivity, they suggested that the shapes we perceive are produced by combining line-segments detected by Hypercolumns. However, line-segments cause very binary and exact representations of information -- something is either "on" or "off". In reality, our receptive fields have overlapping elements and it's more likely that they process information in a more dynamic way. Modern theories (following DeValois) endorse the idea that **Spatial Frequency** plays a vital role in the representation of visual information. While Hubel & Wiesel's originally modeled Simple Cells as bar-detectors with a single "on" region, they are actually more like wave-packet-detectors, containing multiple inhibitory and exhibitory regions.
 
 ![receptor field spatial frequency diagram](/assets/image/receptor_spatial_frequency.png)
+
+The Spatial Frequency suggestion is supported by the fact that most neurons seemed tuned to specific spatial frequencies, and that we seem to exhibit some type of Spatial Frequency adaptation.
+
+Additionally, the structure of Simple Cells causes them to be more sensitive to the spatial frequency of an input than its width:
+
+![frequency vs width](/assets/image/frequency_vs_width.png)
+
+## Contrast Sensitivity Function
+
+The **Contrast Sensitivity Function** allows us to examine the limits of perception by comparing neuron responses in terms of Spatial Frequency and Contrast Sensitivity.
+
+![csf](/assets/image/contrast_sensitivity_function.png)
