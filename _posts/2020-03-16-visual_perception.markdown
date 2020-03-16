@@ -53,7 +53,7 @@ While Rods & Cones respond to light they come in direct contact with, Ganglion c
 
 ## LGN Receptive Fields
 
-The **Lateral Geniculate Nucleus** (LGN) is a structure in the Thalamus, which receives information from the Retinal Ganglion Cells, and sends processed information to the Visual Cortex. There is a LGN in both the right and left hemispheres, but each side only receives information from one half of the visual field.
+From the Retinal Ganglion Cells, the Optic Nerve carries information to the **Lateral Geniculate Nucleus** (LGN); a structure in the Thalamus which sends processed information to the Visual Cortex. There is a LGN in both the right and left hemispheres, but each side only receives information from one half of the visual field.
 
 ![eyes to lgn diagram](/assets/image/eyes_to_lgn_pathway.jpeg)
 
@@ -95,13 +95,13 @@ At each focal point (represented by the stars in the image above), Orientation C
 
 ![orientation column phase](/assets/image/orientation_column_phase.jpeg)
 
+Historically, Hubel & Wiesel originally suggested that Orientation Columns were organized in discrete modules (Hypercolumns), but the pinwheel organization of Orientation Columns calls this into question.
+
 ## Ocular Dominance Slabs
 
 **Ocular Dominance Slabs** are striped regions in the V1 (perpendicular to Orientation Columns) that respond specifically to inputs from either eye. If the surface of V1 were colored according to which eye the region responds to, it would produce the following striped image of the Ocular Dominance Slabs:
 
 ![ocular dominance stripes](/assets/image/occular_dominance_stripes.png)
-
-
 
 ## Hypercolumns
 
@@ -123,6 +123,74 @@ Additionally, the structure of Simple Cells causes them to be more sensitive to 
 
 ## Contrast Sensitivity Function
 
-The **Contrast Sensitivity Function** allows us to examine the limits of perception by comparing neuron responses in terms of Spatial Frequency and Contrast Sensitivity.
+The **Contrast Sensitivity Function** (CSF) allows us to examine the limits of perception by comparing the strength of neuron responses to Spatial Frequency.
 
 ![csf](/assets/image/contrast_sensitivity_function.png)
+
+The CSF can be used to compare the perceptual capabilities of different systems:
+
+![csf comparison](/assets/image/csf_comparison.png)
+
+## Surfaces
+
+**Surfaces** are a theoretical representational stage in between low-level receptive fields and objects in scenes. Surfaces are the product of smaller features (like contours) being combined into a generalized feature. Surfaces are further used to construct objects and eventually percepts.
+
+Gestalt Psychology suggests that we identify Surfaces according to the 6 **Gestalt Grouping Principles**:
+
+1. *Proximity*: nearby things belong together.
+2. *Similarity*: similar things belong together.
+3. *Closure*: if things are enclosed together, they belong together.
+4. *Good Continuation*: things following a smooth path, with no sudden changes, are more likely to belong together.
+5. *Good Form*: things that are familiar are more likely.
+6. *Bad Form*: things that are unfamiliar are unlikely.
+
+## Completion
+
+"Completion" is when we distinguish things and register objects as existing independent of each other without seeing the entirety of each object. There are 2 main types of completion:
+
+**Amodal Completion** is when a surface is occluded, but still registered perceptually. Amodal Completion is likely driven by the Similarity, Continuation, Closure, and Good Form Gestalt Principles. Amodal Completion allows us to group partially hidden fragments together:
+
+![amodal completion diagram](/assets/image/amodal_completion.png)
+
+**Modal Completion**
+
+Modal Completion occurs when two surfaces have the same color and brightness causing no contour to appear in the image. Modal Completion then causes us to perceive a "subjective contour" drawing a distinction between elements in the image that appear identical. The perception of Silhouettes relies on Modal Completion:
+
+![silhouettes](/assets/image/silhouettes.png)
+
+## Subjective Contours
+
+Subjective Contours tend to follow 3 elementary rules:
+
+1. When image regions meet, only one region can "own" the border.
+2. A border is owned by the region perceived to be in front of the other.
+3. If a region does not own part of its border, it is unbounded. Unbounded regions can connect to other unbounded regions to form larger surfaces.
+
+![border ownership example](/assets/image/border_ownership_mc_escher.png)
+
+## Lightness Constancy
+
+The light our eyes receive $L$, is the product of the light's intensity $I$, and the surface's reflectance $R$. We want to determine $I$ and $R$, because they represent actual properties in the world, but we must do this by inference, since we only receive $L = I * R$.
+
+We first infer the intensity using contextual cues and existing knowledge, which we then use to recover the surface's reflectance (this is called "discounting the illuminant"). By inference and recovery, we are able to produce an effect called **Lightness Constancy**; something appears to be the same color, even though the actual light is different. This inference process can also cause regions which receive the same physical light to appear significantly different from each other:
+
+![constancy example](/assets/image/lightness_constancy.png)
+
+## Shadows & Reflections
+
+Identifying a shadow or reflection requires heuristics and use of existing knowledge to figure out what is most likely. However, there are some simple rules which seem to guide our perception of both.
+
+In order for a stimulus to be perceived as a shadow in must follow 2 rules:
+
+1. darker, especially at the edge
+2. appear to lie on a surface; they don't appear to have any thickness or texture and don't completely occlude any contours on the surface they fall upon
+
+As long as a visual stimulus follows these rules, it may have the incorrect color, shape, and direction and still resemble a shadow.
+
+The perception of reflections also follows a few simple rules:
+
+1. Lighter than the surface they are see on
+2. Vertically aligned with reflected objects if on a horizontal surface (e.g. water)
+3. Natural
+
+If a visual stimulus follows these rules, it may be perceived as a reflection even if it has the wrong color, shape, scene, or angle. 
