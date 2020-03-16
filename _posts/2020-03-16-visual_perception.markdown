@@ -152,9 +152,7 @@ Gestalt Psychology suggests that we identify Surfaces according to the 6 **Gesta
 
 ![amodal completion diagram](/assets/image/amodal_completion.png)
 
-**Modal Completion**
-
-Modal Completion occurs when two surfaces have the same color and brightness causing no contour to appear in the image. Modal Completion then causes us to perceive a "subjective contour" drawing a distinction between elements in the image that appear identical. The perception of Silhouettes relies on Modal Completion:
+**Modal Completion** occurs when two surfaces have the same color and brightness causing no contour to appear in the image. Modal Completion then causes us to perceive a "subjective contour" drawing a distinction between elements in the image that appear identical. The perception of Silhouettes relies on Modal Completion:
 
 ![silhouettes](/assets/image/silhouettes.png)
 
