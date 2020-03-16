@@ -101,7 +101,9 @@ At each focal point (represented by the stars in the image above), Orientation C
 
 ![ocular dominance stripes](/assets/image/occular_dominance_stripes.png)
 
- ## Hypercolumns
+
+
+## Hypercolumns
 
 **Hypercolumns** are areas in the V1 containing all the measurements for one region on the retina. Hypercolumns demonstrate **Retinotopy**; adjacent Hypercolumns correspond to adjacent regions on the retina. The exact physical description of a Hypercolumn is imprecise; it's mainly a theoretical idea of a discrete unit of Orientation Columns and Ocular Dominance Slabs.
 
